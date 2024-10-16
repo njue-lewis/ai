@@ -210,3 +210,28 @@ Note that in the fourth set of iterations, we get two paths with equal summed co
 
 ## A* GRAPH SEARCH 
 
+- atree seach works well , expect that it takes time rexploring the racnes it has alerady explored . in other worlds if ithe ame node has expanded twice in i different bracnes of the search tree . a search might explore both of those brances thus wasting time . 
+
+
+- a graph search or simply graph search , removes theis limitaion by addiing this rule : do not expadn the same node more than once . 
+
+
+- heuristic . graph search is optmal only when the forward cost between two successive node a and b given by h(a) -h(b) , is less than or equeal to the backward cost between those two nodes g(a ->b) tis property of the graph search heuristic is called cosistency . 
+
+
+example 
+
+
+QUIZ: use searches to find pat from s to g in the follwing graph  . 
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/a-star-ques-e1547134645748.png)
+
+teh soltion . we solve this question pretty much the same way we solved last queion . but in this case , we keep a track of nodes explred so tha we dont re expler them . 
+![image](https://media.geeksforgeeks.org/wp-content/uploads/graph-ans-e1547141422493.png)
+
+PATH : S-D-B-E-G
+
+COST : 7 
+
+
+
